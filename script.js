@@ -353,9 +353,9 @@ const muteBtn = document.getElementById("muteBtn");
 
 function updateSoundButtonUI() {
   if (audio.muted || audio.bgm.paused) {
-    muteBtn.textContent = "🔇 Sound Off";
+    muteBtn.textContent = "🔇";
   } else {
-    muteBtn.textContent = "🔊 Sound On";
+    muteBtn.textContent = "🔊";
   }
 }
 
