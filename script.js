@@ -23,201 +23,393 @@
 const wedges = [
   {
     label: "Probation",
-    questions: [
-      {
-        question: "True or False: New Jersey uses statewide Child Support Guidelines to help calculate support.",
-        correct: true,
-        explanation: "New Jersey uses statewide guidelines to promote consistency and fairness across cases.",
-        course: "NJ Child Support Guidelines: Foundations",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Child support automatically ends when a child turns 18 in New Jersey.",
-        correct: false,
-        explanation: "Support may continue beyond age 18 depending on factors such as education status and circumstances.",
-        course: "Emancipation & Support Duration in NJ",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Both parents’ incomes are considered when calculating guideline support.",
-        correct: true,
-        explanation: "Guideline calculations typically consider the incomes of both parents and other relevant factors.",
-        course: "Income Determinations in Child Support Cases",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Child support is intended to cover only food and housing.",
-        correct: false,
-        explanation: "Child support contributes to a child’s overall needs, including housing, food, clothing, and other essentials.",
-        course: "What Child Support Covers: Practice & Communication",
-        courseUrl: ""
-      }
-    ]
+   questions: [
+  {
+    question: "Income withholding is the most widely used administrative and effective remedy used by PCSE.",
+    correct: true,
+    explanation: "Income withholding is the most widely used and effective administrative remedy used by PCSE.",
+    course: "Administrative Remedies"
+  },
+  {
+    question: "Cost of Living Adjustments (COLAs) occur on child support orders every three years.",
+    correct: false,
+    explanation: "COLAs occur every two years, not every three.",
+    course: "Judicial Enforcement Remedies"
+  },
+  {
+    question: "A court notice must be sent to the NCP 24 days before an ELR.",
+    correct: true,
+    explanation: "Court notice requirements must be met prior to an ELR.",
+    course: "Court Presentations"
+  },
+  {
+    question: "A worker may need to take additional steps when they receive a New Employer alert to avoid double garnishment.",
+    correct: true,
+    explanation: "Additional steps may be required to prevent duplicate income withholding.",
+    course: "7 Habits for Effectively Managing Tasks and Notifications"
+  },
+  {
+    question: "Scheduling a hearing can be done without supervisor approval.",
+    correct: false,
+    explanation: "Supervisor approval is required to schedule a hearing.",
+    course: "7 Habits for Effectively Managing Tasks and Notifications"
+  },
+  {
+    question: "PCSE determines whether an NCP’s SSI is permanent or temporary.",
+    correct: false,
+    explanation: "Only the Court can make determinations regarding SSI status.",
+    course: "Ch-Ch-Changes: Case Closure & Income Withholding"
+  },
+  {
+    question: "A Distribution Hold prevents funds from being sent to the payee.",
+    correct: false,
+    explanation: "A Disbursement Hold prevents funds from being sent to the payee.",
+    course: "Life Cycle of Holds"
+  },
+  {
+    question: "Bail money may be seized by a writ.",
+    correct: true,
+    explanation: "A writ of execution may be used to seize bail money.",
+    course: "Writs of Execution Process"
+  },
+  {
+    question: "TAXI is the offset program used to collect delinquent support obligations from the NCP.",
+    correct: false,
+    explanation: "SOIL (Set-Off Individual Liability) is the appropriate remedy.",
+    course: "Administrative Enforcement Remedies"
+  },
+  {
+    question: "The NCP cannot contest an income withholding order under administrative review.",
+    correct: false,
+    explanation: "AER allows the NCP to contest income withholding under administrative review.",
+    course: "Administrative Enforcement Remedies"
+  }
+]
+
   },
   {
     label: "Finance",
     questions: [
-      {
-        question: "True or False: Child support matters are handled within the Family Division in New Jersey.",
-        correct: true,
-        explanation: "Child support cases are handled within the Family Division of the New Jersey Superior Court.",
-        course: "Child Support Case Flow in the Family Division",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Child support orders can be reviewed and modified when circumstances change.",
-        correct: true,
-        explanation: "A significant change in circumstances may warrant review or modification through appropriate processes.",
-        course: "Modifications: Standards, Documentation, and Practice",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Enforcement is optional once an order is entered.",
-        correct: false,
-        explanation: "There are established enforcement mechanisms to address noncompliance with court orders.",
-        course: "Enforcement Tools & Compliance Strategies",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Clear documentation supports consistent decision-making and case management.",
-        correct: true,
-        explanation: "Accurate, complete documentation helps ensure consistent processing, communication, and outcomes.",
-        course: "Effective Documentation in Child Support Matters",
-        courseUrl: ""
-      }
-    ]
+  {
+    question: "A financial note must be entered on NJKIDS before local finance or SDU can take action.",
+    correct: false,
+    explanation: "A court order is required before finance or SDU can act.",
+    course: "Core Financial Concepts"
+  },
+  {
+    question: "If a child is emancipated in an unallocated order, the order amount remains the same.",
+    correct: true,
+    explanation: "Unallocated orders do not automatically change when one child emancipates.",
+    course: "Beyond the Numbers: Navigating Child Support Financials"
+  },
+  {
+    question: "SOIL (Set-Off Individual Liability) can be applied when medical support debt exists on the case.",
+    correct: true,
+    explanation: "SOIL may be applied to recover medical support arrears.",
+    course: "Tax Offset in Child Support"
+  },
+  {
+    question: "OCSE developed the Federal Offset Program (FOP).",
+    correct: true,
+    explanation: "OCSE developed the Federal Offset Program.",
+    course: "Finance Workshop: FTO, Arrears & Receipt Reversal"
+  },
+  {
+    question: "FNOOM is the note to Finance to place a distribution hold.",
+    correct: false,
+    explanation: "FNOOM is sent to local Finance to modify a current obligation in NJKIDS.",
+    course: "Beyond the Numbers: Navigating Child Support Financials"
+  },
+  {
+    question: "OWIZ is the Finance screen where the obligation is entered.",
+    correct: true,
+    explanation: "OWIZ is used to enter financial obligations.",
+    course: "Core Financial Concepts"
+  },
+  {
+    question: "A MNFR hold will automatically release after three months.",
+    correct: false,
+    explanation: "MNFR holds automatically release after six months.",
+    course: "Finance Workshop: FTO, Arrears & Receipt Reversal"
+  },
+  {
+    question: "First In, First Out is the rule followed for payouts involving multiple state tax offsets.",
+    correct: true,
+    explanation: "FIFO rules apply for multiple state offset requests.",
+    course: "Finance Workshop: FTO, Arrears & Receipt Reversal"
+  },
+  {
+    question: "When the CP requests a hold, it is called an MNCO.",
+    correct: false,
+    explanation: "MNCO is entered when a hold is ordered by the court.",
+    course: "Beyond the Numbers: Navigating Child Support Financials"
+  },
+  {
+    question: "Finance Division routinely reviews USSO and SORD when entering or modifying an obligation.",
+    correct: false,
+    explanation: "Finance relies on the Financial Note submitted per SOP.",
+    course: "Core Financial Concepts"
+  }
+]
+
   },
   {
     label: "Family",
     questions: [
-      {
-        question: "True or False: Parents can ignore a court order if they have an informal agreement.",
-        correct: false,
-        explanation: "Court orders govern child support obligations. Informal agreements do not replace an order.",
-        course: "Addressing Informal Agreements & Order Compliance",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Parenting time and child support are the same legal issue.",
-        correct: false,
-        explanation: "Parenting time and child support are separate issues, even though families often experience them together.",
-        course: "Communicating the Difference: Support vs. Parenting Time",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Only one parent has responsibilities under child support law.",
-        correct: false,
-        explanation: "Child support frameworks recognize parental responsibilities and financial considerations across both parents.",
-        course: "Shared Responsibilities in Support Determinations",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Child support cases are identical from family to family.",
-        correct: false,
-        explanation: "Cases vary based on individual circumstances, documentation, and case-specific factors.",
-        course: "Applying Guidelines to Real-World Case Variations",
-        courseUrl: ""
-      }
-    ]
+  {
+    question: "Paternity must be established before a custody order can be filed.",
+    correct: false,
+    explanation: "A support order may be filed prior to custody determination.",
+    course: "Case Create and Scheduling for Family Division Staff"
+  },
+  {
+    question: "The proper way to dispose a case is to move the chain, dispose the reliefs, and execute the court order.",
+    correct: false,
+    explanation: "The correct disposition order is Order, Chain, Relief.",
+    course: "Case Closure"
+  },
+  {
+    question: "Only a Judge can determine if an emergent hearing is necessary.",
+    correct: true,
+    explanation: "Judicial authority determines emergent status.",
+    course: "Modification"
+  },
+  {
+    question: "The process to resolve a court filing is called disposition.",
+    correct: true,
+    explanation: "Disposition refers to the resolution of a filing.",
+    course: "Family Workshop – Understanding Disposition, Case Closure and Termination"
+  },
+  {
+    question: "A member is allowed to have multiple Department Client Numbers (DCN).",
+    correct: false,
+    explanation: "A member may only have one DCN.",
+    course: "The Path Through Family: Tools for Success"
+  },
+  {
+    question: "Managers Dashboard mirrors the life cycle of a child support case.",
+    correct: false,
+    explanation: "Track My Cases mirrors the life cycle of a child support case.",
+    course: "Improving Your IV-D Performance Guidance for Family"
+  },
+  {
+    question: "An adjournment is the removal of a scheduled proceeding from the calendar.",
+    correct: false,
+    explanation: "That definition describes a cancellation.",
+    course: "Modifications: Processing Hearing Outcomes for Family"
+  },
+  {
+    question: "The Post Court Reference Manual is used for disposition and case closure.",
+    correct: false,
+    explanation: "The Disposition Checklist is the correct tool.",
+    course: "Family Workshop – Understanding Disposition, Case Closure and Termination"
+  },
+  {
+    question: "A Child Support Hearing Officer may hear cases involving domestic violence.",
+    correct: false,
+    explanation: "CSHOs and consent conferencing cannot be scheduled when domestic violence is known.",
+    course: "Case Create and Scheduling for Family Division"
+  }
+]
+
   },
   {
     label: "CSSA",
     questions: [
-      {
-        question: "True or False: Child support is intended to benefit the custodial parent.",
-        correct: false,
-        explanation: "Child support is intended to benefit the child by contributing to the child’s needs.",
-        course: "How to Explain Child Support Purpose to Participants",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Many participants misunderstand how child support amounts are determined.",
-        correct: true,
-        explanation: "Guidelines and case factors can be confusing; clear explanations help reduce frustration and conflict.",
-        course: "Plain-Language Communication in Child Support",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Consistent, respectful communication can reduce conflict in child support matters.",
-        correct: true,
-        explanation: "Clarity and professionalism help participants understand process, expectations, and next steps.",
-        course: "De-escalation & Communication Strategies",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Child support professionals routinely work with diverse families and complex barriers.",
-        correct: true,
-        explanation: "Cases often involve varied circumstances; awareness and consistency support fair process.",
-        course: "Serving Diverse Participants: Practice Considerations",
-        courseUrl: ""
-      }
-    ]
+  {
+    question: "Parties have 30 days to respond to a Notice of Intent to Terminate.",
+    correct: false,
+    explanation: "Parties have 60 days to respond to a Notice of Intent to Terminate.",
+    course: "Case Closure Theory and Practice for CWA Staff"
+  },
+  {
+    question: "Child support is distributed to the State when dependents are on TANF.",
+    correct: true,
+    explanation: "When dependents receive TANF, child support is assigned to the State.",
+    course: "CSSA Case Initiation"
+  },
+  {
+    question: "A CP may not receive cash payments if they fail to meet cooperation standards.",
+    correct: true,
+    explanation: "Failure to cooperate may impact eligibility for benefits.",
+    course: "Cooperation, Good Cause and Good Faith"
+  },
+  {
+    question: "Mandatory information for all parties on a new case includes name, DOB, SSN, and address.",
+    correct: false,
+    explanation: "Only limited information is required to open a case; full details are not mandatory at initiation.",
+    course: "Case Create and Scheduling"
+  },
+  {
+    question: "Date of birth, SSN, and full name are required to initiate the Locate function.",
+    correct: true,
+    explanation: "These data elements are required to initiate Locate activities.",
+    course: "Locate for County Welfare Agency"
+  },
+  {
+    question: "The primary address is the first address in the address hierarchy.",
+    correct: false,
+    explanation: "The first address in the hierarchy is the non-end-dated confirmed good mailing address.",
+    course: "Locate for County Welfare Agency"
+  },
+  {
+    question: "A CP must be willing to appear in court and fully cooperate to remain compliant with the program.",
+    correct: true,
+    explanation: "Court appearance and cooperation are required to maintain compliance.",
+    course: "Cooperation, Good Cause and Good Faith for CWA Staff"
+  },
+  {
+    question: "Triennial Review is scheduled by CSSA but conducted by PCSE.",
+    correct: false,
+    explanation: "The CSSA office executes the Triennial Review process.",
+    course: "Triennial Review: Theory and Practice"
+  },
+  {
+    question: "NRRQ is the page where documents are manually generated.",
+    correct: false,
+    explanation: "NPRO allows staff to view and print documents.",
+    course: "Case Initiation for CSSA Staff"
+  },
+  {
+    question: "Shared Parenting Guidelines apply when the NCP has 25% or more overnights.",
+    correct: false,
+    explanation: "Shared parenting requires 28% or more overnights, proof of expenses, and a request.",
+    course: "Triennial Review: Theory and Practice"
+  }
+]
+
   },
   {
     label: "UIFSA",
-    questions: [
-      {
-        question: "True or False: Ongoing training helps professionals keep pace with policy, procedure, and best practices.",
-        correct: true,
-        explanation: "Training supports consistency, accuracy, and confidence in practice as expectations and tools evolve.",
-        course: "Continuous Learning in Child Support Practice",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Scenario-based learning helps adult learners apply policy to real situations.",
-        correct: true,
-        explanation: "Scenarios help bridge policy knowledge to day-to-day decision-making and communication.",
-        course: "Scenario-Based Training for Child Support Professionals",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Consistent statewide training can support more uniform practice across counties.",
-        correct: true,
-        explanation: "Shared training promotes common language and expectations across teams and locations.",
-        course: "Statewide Consistency: Standards & Practice Alignment",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Professional development improves outcomes for children and families by strengthening practice.",
-        correct: true,
-        explanation: "High-quality practice supports timely, accurate, and respectful processes that affect real families.",
-        course: "Professional Practice & Family Impact",
-        courseUrl: ""
-      }
-    ]
+   questions: [
+  {
+    question: "The BI Portal is available to assist staff with improving performance measures.",
+    correct: true,
+    explanation: "BI Portal supports performance tracking and reporting.",
+    course: "BI Portal (In Person or Virtual)"
+  },
+  {
+    question: "NJKIDS communicates with federal and state databases through the Child Support Portal.",
+    correct: true,
+    explanation: "The Child Support Portal facilitates integration with external systems.",
+    course: "Introduction to UIFSA"
+  },
+  {
+    question: "The Federal Case Registry allows users to view other states’ case activity.",
+    correct: false,
+    explanation: "FCR data is accessed through tools such as QUICK.",
+    course: "UIFSA Online Tools"
+  },
+  {
+    question: "A task remains on a worker’s task list for five days before being deleted.",
+    correct: false,
+    explanation: "Tasks are automatically deleted after ten days.",
+    course: "7 Habits for Effectively Managing Tasks and Notifications"
+  },
+  {
+    question: "When communicating with another state, Function, Action, and Reason codes must be selected.",
+    correct: true,
+    explanation: "Correct code selection is required for interstate communication.",
+    course: "UIFSA Online Tools"
+  },
+  {
+    question: "An unmarried same-sex couple may only establish parentage using a Certificate of Parentage.",
+    correct: false,
+    explanation: "Parentage in this situation must be established by court order.",
+    course: "Advanced UIFSA"
+  },
+  {
+    question: "Only the controlling jurisdiction may modify an intergovernmental order.",
+    correct: false,
+    explanation: "Only the state with Continued Exclusive Jurisdiction may modify the order.",
+    course: "Introduction to UIFSA"
+  },
+  {
+    question: "All states and territories are operating under UIFSA 2008.",
+    correct: true,
+    explanation: "UIFSA 2008 is currently in effect nationwide.",
+    course: "Introduction to UIFSA"
+  },
+  {
+    question: "Tribal child support information can be found on the Child Support Portal via BIA.",
+    correct: false,
+    explanation: "Tribal law information is located in the OCSE Intergovernmental Reference Guide (IRG).",
+    course: "UIFSA Online Tools"
+  },
+  {
+    question: "FIPS stands for Federal Information Payment Standard.",
+    correct: false,
+    explanation: "FIPS stands for Federal Information Processing Standards Code.",
+    course: "Introduction to UIFSA"
+  }
+]
+
   },
   {
     label: "General Knowledge",
     questions: [
-      {
-        question: "True or False: Ongoing training helps professionals keep pace with policy, procedure, and best practices.",
-        correct: true,
-        explanation: "Training supports consistency, accuracy, and confidence in practice as expectations and tools evolve.",
-        course: "Continuous Learning in Child Support Practice",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Scenario-based learning helps adult learners apply policy to real situations.",
-        correct: true,
-        explanation: "Scenarios help bridge policy knowledge to day-to-day decision-making and communication.",
-        course: "Scenario-Based Training for Child Support Professionals",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Consistent statewide training can support more uniform practice across counties.",
-        correct: true,
-        explanation: "Shared training promotes common language and expectations across teams and locations.",
-        course: "Statewide Consistency: Standards & Practice Alignment",
-        courseUrl: ""
-      },
-      {
-        question: "True or False: Professional development improves outcomes for children and families by strengthening practice.",
-        correct: true,
-        explanation: "High-quality practice supports timely, accurate, and respectful processes that affect real families.",
-        course: "Professional Practice & Family Impact",
-        courseUrl: ""
-      }
-    ]
+  {
+    question: "1980 was the first year Child Support Guidelines were utilized.",
+    correct: false,
+    explanation: "Child Support Guidelines were first utilized in 1986.",
+    course: "Beginner Guidelines"
+  },
+  {
+    question: "Workers sign confidentiality agreements annually.",
+    correct: true,
+    explanation: "Annual confidentiality agreements are required.",
+    course: "Data Security"
+  },
+  {
+    question: "CSSA and Family are responsible for performing locate functions.",
+    correct: false,
+    explanation: "PCSE and CSSA perform locate functions.",
+    course: "Introduction to Child Support"
+  },
+  {
+    question: "COMP is a financial page in NJKIDS.",
+    correct: false,
+    explanation: "Financial pages include OWIZ, OBAA, MHIS, RHIS, DSBV, ELOG, and SLOG.",
+    course: "Core Financial Concepts"
+  },
+  {
+    question: "FCR provides real-time financial and case activity information for other states.",
+    correct: false,
+    explanation: "QUICK provides access to this information.",
+    course: "Exploring the Child Support Portal"
+  },
+  {
+    question: "The magnifying glass icon initiates the search feature in NJKIDS.",
+    correct: true,
+    explanation: "The magnifying glass icon is used to initiate searches.",
+    course: "Case Initiation for CSSA Staff"
+  },
+  {
+    question: "The Program History screen for CSSA in NJKIDS is IVMG.",
+    correct: false,
+    explanation: "The correct screen is MHIS.",
+    course: "Case Initiation for CSSA Staff"
+  },
+  {
+    question: "CSSA can conduct a Triennial Review on an out-of-state order.",
+    correct: false,
+    explanation: "CSSA cannot conduct Triennial Review on out-of-state orders.",
+    course: "Triennial Review: Theory and Practice"
+  },
+  {
+    question: "International Forms allows staff to build Hague documents online.",
+    correct: true,
+    explanation: "International Forms supports Hague document creation.",
+    course: "Exploring the Child Support Portal"
+  },
+  {
+    question: "QUICK includes IV-D and non IV-D cases from all states and territories.",
+    correct: false,
+    explanation: "The Federal Case Registry (FCR) contains this information.",
+    course: "Exploring the Child Support Portal"
+  }
+]
+
   }
 ];
 
