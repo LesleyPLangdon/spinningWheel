@@ -92,7 +92,7 @@ const wedges = [
     course: "Beyond the Numbers: Navigating Child Support Financials"
   },
   {
-    question: "SOIL (Set-Off Individual Liability) can be applied when medical support debt exists on a case.",
+    question: "SOIL (Set-Off Individual Liability) can be applied when medical support debt exists in the case.",
     correct: true,
     explanation: "SOIL may be applied to recover medical support debt.",
     course: "Tax Offset in Child Support"
@@ -106,23 +106,23 @@ const wedges = [
   {
     question: "FNOOM is the note to Finance to place a distribution hold.",
     correct: false,
-    explanation: "FNOOM is sent to Finance to modify a current obligation.",
+    explanation: "FNOOM is the note sent to the local Finance Department to modify current obligations in NJKiDS.",
     course: "Beyond the Numbers: Navigating Child Support Financials"
   },
   {
-    question: "OWIZ is the Finance screen where the obligation is entered.",
+    question: "OWIZ is the finance screen where the obligation is entered.",
     correct: true,
     explanation: "OWIZ is used to enter child support obligations.",
     course: "Core Financial Concepts"
   },
   {
-    question: "A MNFR hold will automatically release after three months.",
+    question: "A MNFR hold will automatically be released after three months.",
     correct: false,
     explanation: "MNFR holds automatically release after six months.",
     course: "Finance Workshop: FTO, Arrears & Receipt Reversal"
   },
   {
-    question: "First In, First Out is the rule followed for payouts involving multiple state tax offsets.",
+    question: "First In, First Out is the rule followed regarding payouts for multiple states requesting federal tax offset.",
     correct: true,
     explanation: "FIFO rules apply when multiple states request offsets.",
     course: "Finance Workshop: FTO, Arrears & Receipt Reversal"
@@ -130,13 +130,13 @@ const wedges = [
   {
     question: "When the CP requests a hold, it is called an MNCO.",
     correct: false,
-    explanation: "MNCO is entered when a hold is ordered by the court.",
+    explanation: "MNCO is when a hold is entered per a court order.",
     course: "Beyond the Numbers: Navigating Child Support Financials"
   },
   {
-    question: "Finance Division routinely reviews USSO and SORD when entering or modifying an obligation.",
+    question: "Finance Division routinely reviews USSO and SORD when entering or modifying a court ordered obligation.",
     correct: false,
-    explanation: "Finance relies on the Financial Note per standard operating procedure.",
+    explanation: "Finance Divisionrelies completelyon the Financial Note submitted to enter or modify orders per standard operating procedure.",
     course: "Core Financial Concepts"
   }
 ]
