@@ -493,7 +493,7 @@ function answer(userAnswer) {
 
   feedbackText.innerText = isCorrect
     ? "Nice work! Want to go deeper? This topic is covered in NJCSI training."
-    : `${currentQuestion.explanation} Want to explore this further? NJCSI training covers this topic in detail.`;
+    : `${currentQuestion.explanation} NJCSI training covers this topic in detail.`;
 
   courseName.innerText = currentQuestion.course || "NJCSI Training";
 
