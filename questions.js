@@ -62,7 +62,7 @@ const wedges = [
     course: "Writs of Execution Process"
   },
   {
-    question: "TAXI is the offset program used to collect delinquent support obligations.",
+    question: "TAXI is the offset program used to collect delinquent support obligations from the NCP.",
     correct: false,
     explanation: "SOIL (Set-Off Individual Liability) is the appropriate remedy.",
     course: "Administrative Enforcement Remedies"
@@ -70,7 +70,7 @@ const wedges = [
   {
     question: "The NCP cannot contest an income withholding order under administrative review.",
     correct: false,
-    explanation: "AER permits the NCP to contest income withholding under administrative review.",
+    explanation: "AER permits the NCP to contest income withholding as an enforcement action under administrative review.",
     course: "Administrative Enforcement Remedies"
   }
 ]
@@ -80,7 +80,7 @@ const wedges = [
     label: "Finance",
  questions: [
   {
-    question: "A financial note must be entered on NJKIDS before local finance or SDU can take action.",
+    question: "A financial note must be entered on NJKiDS before local finance or SDU can take action.",
     correct: false,
     explanation: "A court order is required before finance or SDU can take action.",
     course: "Core Financial Concepts"
@@ -182,7 +182,7 @@ const wedges = [
     course: "Improving IV-D Performance for Family"
   },
   {
-    question: "The intake checklist provides tips for searching databases that communicate with NJKIDS.",
+    question: "The intake checklist provides tips for searching databases that communicate with NJKiDS.",
     correct: true,
     explanation: "The intake checklist supports accurate database searches.",
     course: "Improving IV-D Performance for Family"
@@ -285,7 +285,7 @@ questions: [
     course: "BI Portal"
   },
   {
-    question: "NJKIDS communicates with federal and state databases through the Child Support Portal.",
+    question: "NJKiDS communicates with federal and state databases through the Child Support Portal.",
     correct: true,
     explanation: "The portal facilitates system integration.",
     course: "Introduction to UIFSA"
@@ -363,7 +363,7 @@ questions: [
     course: "Introduction to Child Support"
   },
   {
-    question: "COMP is a financial page in NJKIDS.",
+    question: "COMP is a financial page in NJKiDS.",
     correct: false,
     explanation: "Financial pages include OWIZ, OBAA, MHIS, RHIS, DSBV, ELOG, and SLOG.",
     course: "Core Financial Concepts"
@@ -375,7 +375,7 @@ questions: [
     course: "Exploring the Child Support Portal"
   },
   {
-    question: "The magnifying glass icon initiates search in NJKIDS.",
+    question: "The magnifying glass icon initiates search in NJKiDS.",
     correct: true,
     explanation: "The magnifying glass starts the search feature.",
     course: "Case Initiation for CSSA Staff"
