@@ -279,10 +279,10 @@ questions: [
     label: "UIFSA",
    questions: [
   {
-    question: "BI Portal assists staff with improving performance measures.",
+    question: "BI Portal  is a tool available  to assist staff with improving performance measures.",
     correct: true,
     explanation: "BI Portal supports performance tracking.",
-    course: "BI Portal"
+    course: "BI Portal in person, All staff reporting virtually"
   },
   {
     question: "NJKiDS communicates with federal and state databases through the Child Support Portal.",
@@ -291,33 +291,33 @@ questions: [
     course: "Introduction to UIFSA"
   },
   {
-    question: "The Federal Case Registry allows direct viewing of other states’ case activity.",
+    question: "Federal Case Registry is a tool that gives users access to other states child support case activities.",
     correct: false,
     explanation: "Access occurs through tools such as QUICK.",
     course: "UIFSA Online Tools"
   },
   {
-    question: "Tasks are deleted after five days if not completed.",
+    question: "A task stays on the worker’s task list for 5 days before it is automatically deleted.",
     correct: false,
-    explanation: "Tasks are deleted after ten days.",
+    explanation: "Tasks are deleted automatically at ten days.",
     course: "7 Habits for Effectively Managing Tasks and Notifications"
   },
   {
-    question: "Function, Action, and Reason codes must be selected when communicating with another state.",
+    question: "When communicating with another state, you must select the appropriate Function, Action and Reason codes.",
     correct: true,
     explanation: "Correct code selection is required.",
     course: "UIFSA Online Tools"
   },
   {
-    question: "An unmarried same-sex couple can establish parentage only by Certificate of Parentage.",
+    question: "An unmarried same-sex couple can only establish parentage using a Certificate of Parentage.",
     correct: false,
-    explanation: "Parentage must be established by court order.",
+    explanation: "Parentage in this scenario can only be established by a court order.",
     course: "Advanced UIFSA"
   },
   {
-    question: "Only the Controlling Jurisdiction may modify an intergovernmental order.",
+    question: "Only the Controlling Jurisdiction has the authority to modify an intergovernmental order.",
     correct: false,
-    explanation: "Only the state with CEJ may modify the order.",
+    explanation: "Only the state that has CEJ, or Continued Exclusive Jurisdiction, may modify a child support order.",
     course: "Introduction to UIFSA"
   },
   {
@@ -327,13 +327,13 @@ questions: [
     course: "Introduction to UIFSA"
   },
   {
-    question: "Tribal child support information is found on the Child Support Portal via BIA.",
+    question: "Tribal Information regarding child support can be found on the Child Support Portal via the BIA.",
     correct: false,
-    explanation: "Tribal law is located in the OCSE Intergovernmental Reference Guide.",
+    explanation: "Tribal law is located in the OCSE Intergovernmental Reference Guide (IRG).",
     course: "UIFSA Online Tools"
   },
   {
-    question: "FIPS stands for Federal Information Payment Standard.",
+    question: "FIPS is the acronym Federal Information Payment Standard.",
     correct: false,
     explanation: "FIPS stands for Federal Information Processing Standards Code.",
     course: "Introduction to UIFSA"
