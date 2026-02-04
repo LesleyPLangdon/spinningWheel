@@ -218,25 +218,25 @@ questions: [
     course: "Case Closure Theory and Practice for CWA Staff"
   },
   {
-    question: "Child support is distributed to the State when dependents are on TANF.",
+    question: "Child support is distributed to the state when dependents are on TANF.",
     correct: true,
-    explanation: "Support is assigned to the State during TANF receipt.",
+    explanation: "Support is assigned to the state during TANF receipt.",
     course: "CSSA Case Initiation"
   },
   {
-    question: "A CP may not receive cash payments if they fail to cooperate.",
+    question: "A CP may not receive cash payments if they fail to meet the standards for cooperation.",
     correct: true,
     explanation: "Failure to cooperate may affect eligibility.",
     course: "Cooperation, Good Cause and Good Faith"
   },
   {
-    question: "Name, DOB, SSN, and address are required to open a new case for all parties.",
+    question: "Mandatory for all parties on a new case include: Name, Date of Birth, Social Security Number  and Address.",
     correct: false,
-    explanation: "Only limited information is required to open a case.",
+    explanation: "While all that information is helpful, the required information for the NCP is much less to open the case .  Only the Name, Race, and Sex are required.",
     course: "Case Create and Scheduling"
   },
   {
-    question: "DOB, SSN, and full name are required to initiate Locate.",
+    question: "DOB, SSN, and full name are required to initiate the Locate function.",
     correct: true,
     explanation: "These data elements are required to begin Locate.",
     course: "Locate for County Welfare Agency"
@@ -248,27 +248,27 @@ questions: [
     course: "Locate for County Welfare Agency"
   },
   {
-    question: "CPs must cooperate and appear in court to remain compliant.",
+    question: "CP must be willing to appear in court as needed and lend full cooperation in order to remain compliant with the program.",
     correct: true,
     explanation: "Cooperation and court participation are required.",
     course: "Cooperation, Good Cause and Good Faith"
   },
   {
-    question: "Triennial Review is scheduled by CSSA but conducted by PCSE.",
+    question: "Triennial Review is a process scheduled by CSSA but conducted by PCSE.",
     correct: false,
-    explanation: "CSSA executes the Triennial Review process.",
+    explanation: "CSSA office executes the Triennial Review process.",
     course: "Triennial Review: Theory and Practice"
   },
   {
-    question: "NRRQ is the page used to generate documents.",
+    question: "NRRQ is the page where you can manually generate documents.",
     correct: false,
     explanation: "NPRO allows users to view and print documents.",
     course: "Case Initiation for CSSA Staff"
   },
   {
-    question: "Shared Parenting Guidelines apply at 25% overnights.",
+    question: "The NCP listed on the case must have 25% or more overnights with the child to have the Shared Parenting Guideline applied.",
     correct: false,
-    explanation: "28% overnights, proof of expenses, and a request are required.",
+    explanation: "The NCP must have 28% or more overnights, have proof of incurred expenses, and request the shared parenting guideline on the application.",
     course: "Triennial Review: Theory and Practice"
   }
 ]
