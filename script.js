@@ -324,6 +324,35 @@ function getContrastingTextColor(hexColor) {
   return luminance > 150 ? "#000000" : "#FFFFFF";
 }
 
+function wrapLabel(text, maxCharsPerLine = 12) {
+  // Split into words and build lines up to maxCharsPerLine
+  const words = text.split(" ");
+  const lines = [];
+  let line = "";
+
+  for (const w of words) {
+    const test = line ? `${line} ${w}` : w;
+    if (test.length <= maxCharsPerLine) {
+      line = test;
+    } else {
+      if (line) lines.push(line);
+      line = w;
+    }
+  }
+  if (line) lines.push(line);
+
+  // cap to 2 lines for cleanliness
+  if (lines.length > 2) {
+    // merge extras into last line and truncate
+    const first = lines[0];
+    const rest = lines.slice(1).join(" ");
+    lines.length = 0;
+    lines.push(first);
+    lines.push(rest.length > maxCharsPerLine ? rest.slice(0, maxCharsPerLine - 1) + "…" : rest);
+  }
+
+  return lines;
+}
 
 /* =========================
    DRAW THE WHEEL
@@ -370,10 +399,46 @@ function drawWheel() {
     ctx.rotate(midAngle);
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    ctx.font = `${fontSize}px Arial`;
+    // Base font size (you already have fontSize)
+let labelFontSize = fontSize;
+
+// // Decide wrap aggressiveness based on wheel size
+// const maxChars = canvas.width < 420 ? 10 : 12;
+
+// const lines = wrapLabel(wedges[i].label, maxChars);
+
+// // If it's 2 lines, reduce font a bit so it fits nicely
+// if (lines.length === 2) labelFontSize = Math.max(10, fontSize - 2);
+// How much horizontal space the label is allowed (in px) at its radius
+const maxTextPx = radius * 0.55; // tweak: 0.50–0.60 usually works
+
+ctx.font = `${labelFontSize}px Arial`;
+const label = wedges[i].label;
+
+// Only wrap if the single-line label would exceed the allowed width
+let lines = [label];
+if (ctx.measureText(label).width > maxTextPx) {
+  // Wrap more aggressively on small wheels
+  const maxChars = canvas.width < 420 ? 10 : 12;
+  lines = wrapLabel(label, maxChars);
+
+  // Slightly reduce font only when we actually wrap
+  if (lines.length > 1) labelFontSize = Math.max(10, fontSize - 2);
+  ctx.font = `${labelFontSize}px Arial`;
+}
+
+
+ctx.font = `${labelFontSize}px Arial`;
     ctx.fillStyle = getContrastingTextColor(colors[i % colors.length]);
-    ctx.fillText(wedges[i].label, textRadius, 0);
-    ctx.restore();
+    // ctx.fillText(wedges[i].label, textRadius, 0);
+   const lineHeight = labelFontSize + 2;
+const startY = (lines.length === 1) ? 0 : -(lineHeight / 2);
+
+for (let li = 0; li < lines.length; li++) {
+  ctx.fillText(lines[li], textRadius, startY + li * lineHeight);
+}
+
+ctx.restore();
   }
 
   /* -------- Outer border -------- */
