@@ -81,7 +81,8 @@ const backBtn = document.getElementById("backBtn");
 // Update these paths to match your files
 const AUDIO_FILES = {
   bgm: "audio/background.mp3",
-  cheer: "audio/cheer.mp3"
+  cheer: "audio/cheer.mp3",
+  tick: "audio/tick.mp3"
 };
 
 const audio = {
@@ -99,6 +100,20 @@ audio.bgm.preload = "auto";
 // Cheer settings
 audio.cheer.volume = 0.95;
 audio.cheer.preload = "auto";
+
+// tick settings
+audio.tick = new Audio(AUDIO_FILES.tick);
+audio.tick.volume = 0.6;
+audio.tick.preload = "auto";
+// Tick pool (so rapid ticks don't clip)
+audio.tickPool = Array.from({ length: 6 }, () => {
+  const a = new Audio(AUDIO_FILES.tick);
+  a.volume = 0.6;
+  a.preload = "auto";
+  return a;
+});
+audio.tickIndex = 0;
+
 
 /**
  * Unlock audio and start background music.
@@ -137,6 +152,9 @@ async function unlockAudio() {
 function applyMuteState() {
   audio.bgm.muted = audio.muted;
   audio.cheer.muted = audio.muted;
+  if (audio.tickPool) {
+    audio.tickPool.forEach(t => (t.muted = audio.muted));
+  }
 }
 const muteBtn = document.getElementById("muteBtn");
 
@@ -200,6 +218,18 @@ function playCheer() {
   setTimeout(() => {
     audio.bgm.volume = originalVol;
   }, 2000);
+}
+
+function playTick() {
+  if (!audio.unlocked || audio.muted) return;
+
+  const t = audio.tickPool[audio.tickIndex];
+  audio.tickIndex = (audio.tickIndex + 1) % audio.tickPool.length;
+
+  try {
+    t.currentTime = 0;
+    t.play().catch(() => {});
+  } catch {}
 }
 
 
@@ -397,6 +427,11 @@ function spin() {
   if (spinning) return;
   spinning = true;
   spinBtn.disabled = true;
+let lastTickTime = performance.now(); // ✅ baseline
+let firstTickPlayed = false;
+
+const minInterval = 35;   // ms (fast ticks early)
+const maxInterval = 220;  // ms (slow ticks near end)
 
   // ✅ Random spin time (milliseconds)
   const duration = Math.floor(Math.random() * 2500) + 4500; // 4500–7000ms
@@ -418,6 +453,20 @@ function spin() {
   function animate(now) {
     const elapsed = now - start;
     const t = Math.min(elapsed / duration, 1);    // 0..1
+    // interval grows as t approaches 1 (slower ticks near end)
+const interval = minInterval + (maxInterval - minInterval) * t;
+if (!firstTickPlayed) {
+  playTick();                 // ✅ immediate first click
+  firstTickPlayed = true;
+  lastTickTime = now;
+}
+
+// tick when enough time has passed
+if (now - lastTickTime >= interval) {
+  playTick();
+  lastTickTime = now;
+}
+
     const eased = easeOutCubic(t);                // fast then slow
 
     angle = startAngle + (targetAngle - startAngle) * eased;
