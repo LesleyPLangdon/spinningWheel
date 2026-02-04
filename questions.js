@@ -345,7 +345,7 @@ questions: [
     label: "General Knowledge",
   questions: [
   {
-    question: "1980 was the first year Child Support Guidelines were used.",
+    question: "1980 was the first year Child Support Guidelines were utilized.",
     correct: false,
     explanation: "Guidelines were first utilized in 1986.",
     course: "Beginner Guidelines"
@@ -357,7 +357,7 @@ questions: [
     course: "Data Security"
   },
   {
-    question: "CSSA and Family perform Locate functions.",
+    question: "CSSA and Family are responsible for performing Locate functions.",
     correct: false,
     explanation: "Locate is performed by PCSE and CSSA.",
     course: "Introduction to Child Support"
@@ -369,39 +369,39 @@ questions: [
     course: "Core Financial Concepts"
   },
   {
-    question: "FCR provides real-time financial information for other states.",
+    question: "FCR is the site on the Child Support Portal that gives you financial information and case activities in real time for cases in another state.",
     correct: false,
-    explanation: "QUICK provides this access.",
+    explanation: "QUICK is the site that gives the user permission to search this information.",
     course: "Exploring the Child Support Portal"
   },
   {
-    question: "The magnifying glass icon initiates search in NJKiDS.",
+    question: "The magnifying glass icon is the way to initiate the search feature in NJKiDS.",
     correct: true,
     explanation: "The magnifying glass starts the search feature.",
     course: "Case Initiation for CSSA Staff"
   },
   {
-    question: "IVMG is the Program History screen for CSSA.",
+    question: "Program History screen on NJKiDS is IVMG for CSSA.",
     correct: false,
     explanation: "MHIS is the correct screen.",
     course: "Case Initiation for CSSA Staff"
   },
   {
-    question: "CSSA may conduct Triennial Review on out-of-state orders.",
+    question: "CSSA can conduct a Triennial Review for a case that is an out of state order.",
     correct: false,
-    explanation: "CSSA cannot conduct Triennial Review on out-of-state orders.",
+    explanation: "While the Court may have the authority if registered by the other state to enforce and modify, the CSSA office cannot conduct the administrative process of Triennial Review to an out-of-state order.",
     course: "Triennial Review: Theory and Practice"
   },
   {
-    question: "International Forms allows staff to build Hague documents online.",
+    question: "International Forms is the application on the Child Support Portal that enables staff to build International (Hague) documents online.",
     correct: true,
     explanation: "International Forms supports Hague document creation.",
     course: "Exploring the Child Support Portal"
   },
   {
-    question: "QUICK includes all IV-D and non-IV-D cases nationwide.",
+    question: "QUICK includes all cases in the 54 states and territories, both IV-D and non IV-D.",
     correct: false,
-    explanation: "That information is contained in the Federal Case Registry.",
+    explanation: "That information is contained in the Federal Case Registry (FCR).",
     course: "Exploring the Child Support Portal"
   }
 ]
