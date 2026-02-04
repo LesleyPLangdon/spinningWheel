@@ -152,7 +152,7 @@ const wedges = [
     course: "Case Create and Scheduling for Family Division Staff"
   },
   {
-    question: "The proper way to dispose a case is Chain, Relief, and Order.",
+    question: "The proper way to dispose a case is to move the chain, dispose the reliefs, and execute the court order.",
     correct: false,
     explanation: "The correct disposition order is Order, Chain, Relief.",
     course: "Case Closure"
@@ -161,7 +161,7 @@ const wedges = [
     question: "Only a judge can determine if an emergent hearing is necessary.",
     correct: true,
     explanation: "Judicial authority determines whether a matter is emergent.",
-    course: "Modification"
+    course: "Modifications"
   },
   {
     question: "The process to resolve a court filing is called disposition.",
@@ -170,39 +170,39 @@ const wedges = [
     course: "Understanding Disposition, Case Closure and Termination"
   },
   {
-    question: "A member may have multiple Department Client Numbers (DCN).",
+    question: "A member is allowed to have multiple Department Client Numbers (DCN).",
     correct: false,
     explanation: "Each member is assigned only one DCN.",
     course: "The Path Through Family: Tools for Success"
   },
   {
-    question: "Managers Dashboard mirrors the life cycle of a child support case.",
+    question: "Managers Dashboard allows staff to analyze information that mirrors the life cycle of a child support case.",
     correct: false,
-    explanation: "Track My Cases mirrors the life cycle of a child support case.",
-    course: "Improving IV-D Performance for Family"
+    explanation: "Track My Cases is the tool that allows staff to analyze information that mirrors the life cycle of a child support case.",
+    course: "Improving IV-D Performance Guidance for Family"
   },
   {
     question: "The intake checklist provides tips for searching databases that communicate with NJKiDS.",
     correct: true,
     explanation: "The intake checklist supports accurate database searches.",
-    course: "Improving IV-D Performance for Family"
+    course: "Improving IV-D Performance Guidance for Family"
   },
   {
-    question: "An adjournment removes a scheduled proceeding from the calendar.",
+    question: "An adjournment is the removal of a scheduled proceeding from the calendar.",
     correct: false,
     explanation: "That describes a cancellation, not an adjournment.",
-    course: "Processing Hearing Outcomes for Family"
+    course: "Modifications, Processing Hearing Outcomes for Family"
   },
   {
-    question: "The Post Court Reference Manual is used for disposition and case closure.",
+    question: "The Post Court Reference Manual is the tool utilized for assisting with disposition and case closure.",
     correct: false,
     explanation: "The Disposition Checklist is the correct tool.",
-    course: "Understanding Disposition, Case Closure and Termination"
+    course: "Family Workshop: Understanding Disposition, Case Closure and Termination"
   },
   {
-    question: "A Child Support Hearing Officer may hear cases involving domestic violence.",
+    question: "A Child Support Hearing Officer may hear cases that involve domestic violence.",
     correct: false,
-    explanation: "CSHO and consent conferencing cannot be scheduled when domestic violence is known.",
+    explanation: "Per IV-D regulations, the CSHO nor consent conferencing can be scheduled when there is known domestic violence.",
     course: "Case Create and Scheduling for Family Division"
   }
 ]
