@@ -32,27 +32,27 @@ const wedges = [
     course: "Court Presentations"
   },
   {
-    question: "A worker may need to take additional steps after receiving a New Employer alert to avoid double garnishment.",
+    question: "A worker may need to take additional steps when they receive a New Employer alert to avoid double garnishment.",
     correct: true,
     explanation: "Additional review may be required to prevent duplicate income withholding.",
     course: "7 Habits for Effectively Managing Tasks and Notifications"
   },
   {
-    question: "Scheduling a hearing can be done without supervisor approval.",
+    question: "A hearing can be scheduled without supervisor approval.",
     correct: false,
-    explanation: "Supervisor approval is required to schedule a hearing.",
+    explanation: "It does require a supervisor’s approval to schedule a hearing.",
     course: "7 Habits for Effectively Managing Tasks and Notifications"
   },
   {
     question: "PCSE determines whether an NCP’s SSI is permanent or temporary.",
     correct: false,
-    explanation: "Only the Court can determine whether SSI is permanent or temporary.",
+    explanation: "Only the Court can make this determination.",
     course: "Ch-Ch-Changes: Case Closure & Income Withholding"
   },
   {
     question: "A Distribution Hold prevents funds from being sent to the payee.",
     correct: false,
-    explanation: "A Disbursement Hold prevents funds from being sent to the payee.",
+    explanation: "It is a Disbursement Hold.",
     course: "Life Cycle of Holds"
   },
   {
@@ -64,7 +64,7 @@ const wedges = [
   {
     question: "TAXI is the offset program used to collect delinquent support obligations from the NCP.",
     correct: false,
-    explanation: "SOIL (Set-Off Individual Liability) is the appropriate remedy.",
+    explanation: "SOIL (Set-Off Individual Liability) is the remedy.",
     course: "Administrative Enforcement Remedies"
   },
   {
