@@ -293,19 +293,19 @@ questions: [
   {
     question: "Federal Case Registry is a tool that gives users access to other states child support case activities.",
     correct: false,
-    explanation: "Access occurs through tools such as QUICK.",
+    explanation: "Access occurs through tools such as QUICK (Query Interstate Cases for Kids).",
     course: "UIFSA Online Tools"
   },
   {
     question: "A task stays on the worker’s task list for 5 days before it is automatically deleted.",
     correct: false,
-    explanation: "Tasks are deleted automatically at ten days.",
+    explanation: "They are deleted automatically in 10 days.",
     course: "7 Habits for Effectively Managing Tasks and Notifications"
   },
   {
     question: "When communicating with another state, you must select the appropriate Function, Action and Reason codes.",
     correct: true,
-    explanation: "Correct code selection is required.",
+    explanation: "FAR codes are required for the CSeNet to work properly.",
     course: "UIFSA Online Tools"
   },
   {
@@ -323,7 +323,7 @@ questions: [
   {
     question: "All states and territories operate under UIFSA 2008.",
     correct: true,
-    explanation: "UIFSA 2008 is currently in effect nationwide.",
+    explanation: "UIFSA 2008 is currently in effect for all states and territories.",
     course: "Introduction to UIFSA"
   },
   {
@@ -369,7 +369,7 @@ questions: [
     course: "Core Financial Concepts"
   },
   {
-    question: "FCR is the site on the Child Support Portal that gives you financial information and case activities in real time for cases in another state.",
+    question: "FCR is the site on the Child Support Portal that provides real-time financial information and case activities in real time for cases in another state.",
     correct: false,
     explanation: "QUICK is the site that gives the user permission to search this information.",
     course: "Exploring the Child Support Portal"
