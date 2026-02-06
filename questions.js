@@ -118,7 +118,7 @@ const wedges = [
   {
     question: "A MNFR hold will automatically be released after three months.",
     correct: false,
-    explanation: "MNFR holds automatically release after six months.",
+    explanation: "MNFR will release automatically after six months.",
     course: "Finance Workshop: FTO, Arrears & Receipt Reversal"
   },
   {
@@ -130,13 +130,13 @@ const wedges = [
   {
     question: "When the CP requests a hold, it is called an MNCO.",
     correct: false,
-    explanation: "MNCO is when a hold is entered per a court order.",
+    explanation: "MNCO occurs when a hold is entered pursuant to a court order.",
     course: "Beyond the Numbers: Navigating Child Support Financials"
   },
   {
     question: "Finance Division routinely reviews USSO and SORD when entering or modifying a court ordered obligation.",
     correct: false,
-    explanation: "Finance Divisionrelies completelyon the Financial Note submitted to enter or modify orders per standard operating procedure.",
+    explanation: "Finance Division relies completely on the Financial Note submitted to enter or modify orders per standard operating procedure.",
     course: "Core Financial Concepts"
   }
 ]
@@ -148,7 +148,7 @@ const wedges = [
   {
     question: "Paternity must be established before a custody order can be filed.",
     correct: false,
-    explanation: "A support order may be filed prior to custody determination.",
+    explanation: "Paternity must be established prior to establishing a support order.",
     course: "Case Create and Scheduling for Family Division Staff"
   },
   {
@@ -172,7 +172,7 @@ const wedges = [
   {
     question: "A member is allowed to have multiple Department Client Numbers (DCN).",
     correct: false,
-    explanation: "Each member is assigned only one DCN.",
+    explanation: "Each member should have only one assigned DCN.",
     course: "The Path Through Family: Tools for Success"
   },
   {
@@ -196,7 +196,7 @@ const wedges = [
   {
     question: "The Post Court Reference Manual is the tool utilized for assisting with disposition and case closure.",
     correct: false,
-    explanation: "The Disposition Checklist is the correct tool.",
+    explanation: "The doucment used is the Disposition Checklist.",
     course: "Family Workshop: Understanding Disposition, Case Closure and Termination"
   },
   {
@@ -236,7 +236,7 @@ questions: [
     course: "Case Create and Scheduling"
   },
   {
-    question: "DOB, SSN, and full name are required to initiate the Locate function.",
+    question: "DOB, SSN, and Full Name are required to initiate the Locate function.",
     correct: true,
     explanation: "These data elements are required to begin Locate.",
     course: "Locate for County Welfare Agency"
@@ -244,7 +244,7 @@ questions: [
   {
     question: "The primary address is the first address in the hierarchy.",
     correct: false,
-    explanation: "The first address is the non-end-dated confirmed good mailing address.",
+    explanation: "1st in hierarchy is the Non-end-dated Confirmed Good Mailing address.",
     course: "Locate for County Welfare Agency"
   },
   {
