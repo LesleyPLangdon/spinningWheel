@@ -22,7 +22,7 @@ const wedges = [
   {
     question: "Cost of Living Adjustments (COLAs) occur on child support orders every three years.",
     correct: false,
-    explanation: "COLAs occur every two years, not every three.",
+    explanation: "COLAs occur every two years.",
     course: "Judicial Enforcement Remedies"
   },
   {
