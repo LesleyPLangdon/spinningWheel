@@ -196,7 +196,7 @@ const wedges = [
   {
     question: "The Post Court Reference Manual is the tool utilized for assisting with disposition and case closure.",
     correct: false,
-    explanation: "The doucment used is the Disposition Checklist.",
+    explanation: "The document used is the Disposition Checklist.",
     course: "Family Workshop: Understanding Disposition, Case Closure and Termination"
   },
   {
